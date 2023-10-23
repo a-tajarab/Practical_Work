@@ -1,3 +1,4 @@
+# my_program.py
 #Task 1 - Executing a file
 number = input ("Enter a number:")
 number = int(number)
