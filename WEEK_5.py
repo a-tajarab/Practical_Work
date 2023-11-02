@@ -23,8 +23,18 @@ else:
 #Task 4 - total.py
 import sys
 count = len(sys.argv)
-total = 0
+total = number + number_2
 while count > 1:
     count -= 1
     total += 1
 print("Total is", total)
+number_3 =input ("Type a number of your choice:")
+number_3 = int(number_3)
+print("Wow what a lovely number", number_3, "love it")
+print("Right! Let's get onto some fun stuff")
+print("Would you like to proceed?")
+response = input("Y or N:")
+if response == "Y":
+    print("Fabulous!")
+elif response == "N":
+    print("Oh well I guess you will miss the fun!:(")
