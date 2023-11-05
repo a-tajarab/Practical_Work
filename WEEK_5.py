@@ -69,4 +69,6 @@ number1 = [10, 23, 30]
 result1 = average(number1)
 print("Average is", result1)
 
-#Task 6 -
+#Task 6
+import show_path
+print("Here is the path of the python", show_path)
