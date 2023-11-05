@@ -44,7 +44,7 @@ if response == "Y":
     elif 20<= number_3 < 30:
             print("Life will get easier. Hang on.")
     elif 30<= number_3 < 40:
-            print("You feel old now!")
+            print("You feel old now?")
     elif 40<= number_3 < 50:
             print("Happy days")
     elif 50<= number_3 < 60:
