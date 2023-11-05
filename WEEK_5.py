@@ -37,27 +37,36 @@ print("Would you like to proceed?")
 response = input("Y or N:")
 if response == "Y":
     print("Fabulous!")
-    if number_3 < 0 <= 10:
-        print("You are boss!")
-    if number_3 >= 10:
-        print("You will become a star!")
-    if number_3 >= 20:
-        print("Life will get easier. Hang on.")
-    if number_3 >= 30:
-        print("You feel old now!")
-    if number_3 >= 40:
-        print("Happy days")
-    if number_3 >= 50:
-        print("Half-life hahaha")
-    if number_3 >= 60:
-        print("Are you depressed?")
-    if number_3 >= 70:
-        print("You seem wise!")
-    if number_3 >= 80:
-        print("You have a bright future ahead of you")
-    if number_3 >= 90:
-        print("Stay healthy!")
-elif response == "N":
+    if 0<= number_3 < 10:
+            print("You are boss!")
+    elif 10<= number_3 < 20:
+            print("You will become a star!")
+    elif 20<= number_3 < 30:
+            print("Life will get easier. Hang on.")
+    elif 30<= number_3 < 40:
+            print("You feel old now!")
+    elif 40<= number_3 < 50:
+            print("Happy days")
+    elif 50<= number_3 < 60:
+            print("Half-life hahaha")
+    elif 60<= number_3 < 70:
+            print("Are you depressed?")
+    elif 70<= number_3 < 80:
+            print("You seem wise!")
+    elif 80<= number_3 < 90:
+            print("You have a bright future ahead of you")
+    elif 90<= number_3 < 100:
+            print("Stay healthy!")
+if response == "N":
     print("Oh well I guess you will miss the fun!:(")
 
 
+#Task 5 - Module test
+def average(numbers):
+    return sum(numbers) / len(numbers)
+from my_utils import average
+number1 = [10, 23, 30]
+result1 = average(number1)
+print("Average is", result1)
+
+#Task 6 -
