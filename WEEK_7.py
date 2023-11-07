@@ -16,8 +16,7 @@ if name in names:
 elif name not in names:
     print("You are not listed in the set of known names")
 
-#Task 4 - built-in help()
-help()
+
 
 #Task 5 - Two initial sets - accessors type methods
 staff = {"Pete", "Kelly", "Jon", "Paul", "Sally", "Sue"}
@@ -54,6 +53,7 @@ roots = {n: math.sqrt(n) for n in range(1, 26)}
 print(roots)
 
 #Task 10 - Manipulating Dictionaries
+stock = set({"apple", "pear", "kiwi", })
 if "apple" in stock:
    print("Apples have a stock level")
 
@@ -64,5 +64,11 @@ stock["kiwi"] = 10
 stock = name
 
 
-
 #Task 11 - Dictionary methods
+# pop the "orange" returning its stock level
+stock.pop("orange")
+# update the stock to include two new fruits
+stock.update(lemmon=15, strawberry=99)
+
+
+#Task 12 - ItER
