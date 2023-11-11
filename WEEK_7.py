@@ -31,14 +31,14 @@ staff_or_external = directors ^ staff
 print(staff_or_external)
 
 #Task 6 - mutator version
-vowels = set({"a", "e", "i"})
+vowels = {"a", "e", "i"}
 print(vowels)
 vowels -= {"o", "u"}
 
 print(vowels)
 
 #Task 7 -
-if directors < staff:
+if directors <= staff:
   print("All directors are staff members")
 if staff > directors:
   print("All directors are staff members")
@@ -53,7 +53,7 @@ roots = {n: math.sqrt(n) for n in range(1, 26)}
 print(roots)
 
 #Task 10 - Manipulating Dictionaries
-stock = set({"apple", "pear", "kiwi", })
+stock = {"apple": 5, "pear": 10, "kiwi":8, }
 if "apple" in stock:
    print("Apples have a stock level")
 
@@ -61,14 +61,21 @@ print("Apple stock level is", stock["apple"])
 stock["apple"] += 1
 stock["pear"] = 50
 stock["kiwi"] = 10
-stock = name
+stock.update({"lemon": 15, "strawberry": 99})
 
 
 #Task 11 - Dictionary methods
 # pop the "orange" returning its stock level
-stock.pop("orange")
+if "orange" in stock:
+    orange_stock_level = stock.pop("orange")
+    print(f"The stock level of orange was {orange_stock_level}")
+else:
+    print("The fruit 'orange' is not in the stock dictionary")
+
 # update the stock to include two new fruits
 stock.update(lemmon=15, strawberry=99)
+print("Updated stock:", stock)
 
-
-#Task 12 - ItER
+#Task 12 - Iterations over Dictionaries
+for num, sqrt_value in roots.items():
+    print(f"The square root of {num} is {sqrt_value}")
